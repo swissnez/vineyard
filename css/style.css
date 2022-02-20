@@ -104,13 +104,16 @@ img {
   
 }
 
-.showcase h1 {
+.showcase h1,h2 {
   font-size: 50px;
   font-weight: 700;
   color:var(--neutral-brown);
 }
-.showcase h2 {
-  color:var(--neutral-brown);
+/* .showcase h2 {
+  /* color:var(--neutral-brown); }*/
+  
+
+.showcase .showcase-form h2 {
   font-weight: 700;
 }
 
@@ -197,6 +200,11 @@ img {
   /* background-color: var(--primary-color); */
   background-image:linear-gradient(rgba(255, 255, 255, 0.9),rgba(243, 245, 236, 0.9)),url("../images/front-view-wine-glasses-fresh-grapes-walnuts-yellow-cheese-wood-board-overturned-bottle-dark-background_140725-144998.jpg");
   background-size: cover; 
+  /* border-top-right-radius: 100px; */
+  border-top-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .Winetypes .card {

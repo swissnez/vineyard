@@ -404,6 +404,30 @@ footer {
 
 /* Media Queries */
 
+
+/* Tablets and under */
+
+@media (max-width: 768px) {
+  /* Anything under 768px */
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0,0,0,0.1)
+  }
+
+}
+
 @media (min-width: 1500px) {
   .showcase::before,.showcase::after {
     bottom: 450px;

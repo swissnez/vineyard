@@ -67,6 +67,8 @@ img {
 }
 
 
+
+
 /* Showcase / Hero */
 
 .showcase {
@@ -402,6 +404,9 @@ footer {
   background-color: var(--dark-color);
 }
 
+.footer h1 {
+  color: var(--neutral-brown);
+}
 /* Media Queries */
 
 
@@ -409,11 +414,41 @@ footer {
 
 @media (max-width: 768px) {
   /* Anything under 768px */
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .Winetypes .grid,
+  .farmland .grid,
+  .footer .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .Winetypes .grid >* {
+    grid-column: 1;
+  }
+  .showcase {
+    height:auto;
+  }
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+  }
+  .footer .grid >*{
+    justify-self: center;
+  }
+  
 }
 
 /* Mobile */
 
 @media (max-width: 500px) {
+  /* Anything under 500px mobile */
   .navbar {
     height: 110px;
   }

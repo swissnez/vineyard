@@ -252,7 +252,6 @@ img {
 
 .bg-primary {
   background: var(--primary-color);
-  
 }
 
 .green-box-shadow {
@@ -398,14 +397,21 @@ footer {
   background-color: var(--dark-color);
   color: #fff;
   border-top: 20px solid var(--primary-color);
+  background-size: cover;
+  background-image: url("../images/cool-background.png");
 }
  .footer a {
   color: #fff;
+  opacity: 0.5;
   background-color: var(--dark-color);
 }
 
 .footer h1 {
   color: var(--neutral-brown);
+}
+
+.footer .grid >*{
+  justify-self: center;
 }
 /* Media Queries */
 
@@ -439,11 +445,31 @@ footer {
     justify-self: center;
     margin: auto;
   }
-  .footer .grid >*{
-    justify-self: center;
-  }
+  
   
 }
+
+/* White Wine */
+
+.features-head  {
+  height: auto;
+  
+}
+.features-head .grid {
+ 
+  background-size: cover;
+  background-image: linear-gradient(to bottom left, rgba(255,255,255,0.8), 90% ,rgba(255,255,255,0.2)),url("https://images.unsplash.com/photo-1556395676-1925d260d81b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80");
+}
+.features-head h1 {
+  color: var(--neutral-brown);
+}
+
+.features-head img {
+  border-left: 3px solid var(--neutral-brown);
+}
+
+
+
 
 /* Mobile */
 

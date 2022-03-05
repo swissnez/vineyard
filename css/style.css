@@ -4,6 +4,7 @@
 
 :root {
   --primary-color: #A1B36A;
+  --secondary-color: rgb(242, 244, 237);
   --dark-color: #333;
   --neutral-brown: #ae8346;
   --dark-brown: #9f5f07;
@@ -35,6 +36,9 @@ h1,h2 {
   margin: 10px 0;
   
 }
+/* h3 {
+  color: var(--dark-brown);
+} */
 
 p {
   margin: 10px 0;
@@ -156,6 +160,23 @@ img {
   outline: none;
   color: #fff;
 }
+
+
+.showcase .grid {
+  box-shadow: #333 0px 5px 15px;
+  border-radius: 5px;
+  background: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image:linear-gradient(rgba(161,179,106,0.1),rgba(161,179,106,0.9)),url("https://img.freepik.com/free-photo/grape-cluster-black-bucket-wooden-surface-close-up_176474-6044.jpg");
+}
+.showcase .grid .card {
+  background-color: #333;
+  box-shadow: #333 0px 5px 15px;
+}
+
+
+
 /* stats */
 
 .stats {
@@ -248,12 +269,105 @@ img {
 
 
 
+/* White Wine */
+
+.features-head  {
+  height: auto;
+  
+}
+.features-head .grid {
+ 
+  background-size: cover;
+  background-image: linear-gradient(to bottom left, rgba(255,255,255,0.8), 90% ,rgba(255,255,255,0.2)),url("https://images.unsplash.com/photo-1556395676-1925d260d81b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80");
+}
+.features-head h1 {
+  color: var(--neutral-brown);
+}
+
+.features-head img {
+  border-left: 3px solid var(--neutral-brown);
+}
+
+
+
+/* Wine Specifics */
+.specifics .grid  >*:nth-child(odd)  {
+  background-color: var(--secondary-color);
+
+}
+
+.specifics h3 {
+  color: var(--dark-brown);
+}
+
+.specifics .grid img {
+  border-radius: 1000px;
+}
+
+
+/* History Redwines */
+
+.redwine-headline .grid {
+  grid-template-columns: 60% 40%;
+  overflow:hidden;
+}
+
+.history,
+.redwine-headline h1,h2,h3 {
+  color: var(--dark-brown);
+}
+
+.history .card {
+  color:#333;
+}
+
+.history .grid {
+  grid-template-columns: 1fr 2fr;
+  align-items:flex-start;
+}
+
+/* All (adjust) bullet points */
+.history .card .p2 i {
+  color:var(--primary-color);
+  padding-right:10px;
+  font-size: 16px;
+  padding-left:10px;
+  
+}
+/* Purification icon */
+.history .card span i {
+ color:var(--primary-color);
+ font-size:40px;
+ padding-right:10px;
+}
+
+.history li {
+  background-color: var(--secondary-color);
+}
+
+.history nav li {
+  font-size:17px;
+  padding: bottom 2px;
+  margin-bottom:5px;
+  
+}
+
+.history nav a:hover {
+  color: var(--primary-color);
+}
+
+
+
+
 /* Utils */
 
 .bg-primary {
   background: var(--primary-color);
 }
 
+.bg-secondary {
+  background: var(--secondary-color);
+}
 .green-box-shadow {
   box-shadow: rgba(161, 179, 106, 0.2) 0px 2px 5px -1px, rgba(161, 179, 0, 0.5) 0px 1px 3px -1px;
 }
@@ -263,18 +377,8 @@ img {
   overflow: auto;
   padding: 0 40px;
 }
-.showcase .grid {
-  box-shadow: #333 0px 5px 15px;
-  border-radius: 5px;
-  background: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image:linear-gradient(rgba(161,179,106,0.1),rgba(161,179,106,0.9)),url("https://img.freepik.com/free-photo/grape-cluster-black-bucket-wooden-surface-close-up_176474-6044.jpg");
-}
-.showcase .grid .card {
-  background-color: #333;
-  box-shadow: #333 0px 5px 15px;
-}
+
+
 
 .card {
   padding: 20px;
@@ -344,6 +448,7 @@ img {
 .p2 {
   padding: 2rem;
 }
+
 .flex {
   display: flex;
   justify-content: center;
@@ -388,11 +493,17 @@ img {
   font-size:4rem;
 }
 
+.xxl {
+  font-size:8rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 /* Footer */
+/* ************** */
+
 footer {
   background-color: var(--dark-color);
   color: #fff;
@@ -413,7 +524,9 @@ footer {
 .footer .grid >*{
   justify-self: center;
 }
-/* Media Queries */
+
+
+/* Media Queries -> RESPONSIVE SECTION */
 
 
 /* Tablets and under */
@@ -449,24 +562,7 @@ footer {
   
 }
 
-/* White Wine */
 
-.features-head  {
-  height: auto;
-  
-}
-.features-head .grid {
- 
-  background-size: cover;
-  background-image: linear-gradient(to bottom left, rgba(255,255,255,0.8), 90% ,rgba(255,255,255,0.2)),url("https://images.unsplash.com/photo-1556395676-1925d260d81b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80");
-}
-.features-head h1 {
-  color: var(--neutral-brown);
-}
-
-.features-head img {
-  border-left: 3px solid var(--neutral-brown);
-}
 
 
 

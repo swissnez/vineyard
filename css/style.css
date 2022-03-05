@@ -173,6 +173,7 @@ img {
 .showcase .grid .card {
   background-color: #333;
   box-shadow: #333 0px 5px 15px;
+  animation: slideInFromRight 1s ease-in;
 }
 
 
@@ -307,6 +308,13 @@ img {
 
 /* History Redwines */
 
+.redwine-headline {
+ 
+  background-repeat: no-repeat;
+  background-blend-mode:color-dodge;
+  background-image: url("https://cdn-prod.medicalnewstoday.com/content/images/articles/300/300854/red-wine.jpg");
+}
+
 .redwine-headline .grid {
   grid-template-columns: 60% 40%;
   overflow:hidden;
@@ -356,6 +364,9 @@ img {
   color: var(--primary-color);
 }
 
+.redwine-headline img {
+  animation: fadeIn 5s;
+}
 
 
 
@@ -526,10 +537,40 @@ footer {
 }
 
 
+/* Animations */
+@keyframes slideInFromLeft{
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight{
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity:1;
+  }
+}
 /* Media Queries -> RESPONSIVE SECTION */
 
 
-/* Tablets and under */
+/* Tablets & under */
 
 @media (max-width: 768px) {
   /* Anything under 768px */
@@ -538,6 +579,8 @@ footer {
   .stats .grid,
   .Winetypes .grid,
   .farmland .grid,
+  .redwine-headline .grid,
+  .history .grid,
   .footer .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -559,7 +602,11 @@ footer {
     margin: auto;
   }
   
-  
+  .features-head img {
+    display:none;
+}
+
+
 }
 
 
